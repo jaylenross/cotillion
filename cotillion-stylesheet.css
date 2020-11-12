@@ -138,7 +138,7 @@ section#two {
 .open{
     width:100vw;
     height: auto;
-    border: red 5px solid;
+    border: red 0px solid;
      display: flex;
     flex-direction: column;
     justify-content: center;
