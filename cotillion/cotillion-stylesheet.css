@@ -1,0 +1,272 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    /*background-color: lightblue;*/
+    /*
+height: 3000px;
+    min-height: 100vh;
+*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#9faaa8, #ffffff, #5b4f4a)
+}
+
+h1 {
+    font-family: p22-underground-sc, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 100px;
+    color: white;
+    text-align: center;
+}
+h2 {
+    font-family: p22-underground-sc, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    color: white;
+    text-align: left;
+}
+
+section {
+    height: 100vh;
+    width: 100%;
+    border: black 5px solid;
+
+}
+
+section#one {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+section#two {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.collage {
+    border: black 5px solid;
+    position: relative;
+    width: 1000px;
+    height:800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.blue {
+    width: 500px;
+    height: 600px;
+    border: blue 3px solid;
+}
+
+
+#first {
+    width: 1170px;
+    z-index: -1;
+    position: absolute;
+}
+#second {
+    width: 40%;
+    z-index: 0;
+    position: absolute;
+    top:-200px;
+    left: 00px;
+    filter: grayscale(100%);
+    opacity: 85%;
+
+}
+#third{
+    z-index: 1;
+    top:300px;
+    left: -130px;
+    position: absolute;
+    opacity: 85%;
+}
+.imageone {
+
+    width: 1000px;
+    height: 500px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#move{
+    margin-left:1105px;
+    margin-bottom:125px; 
+}
+
+#movetwo{
+    margin-left:-355px;
+    margin-bottom:375px;
+    transform: rotate(180deg);
+}
+#movethree{
+    margin-left:-1285px;
+    margin-bottom:50px;
+    transform: rotate(180deg);
+}
+
+
+.imagethree {
+
+    width: 1200px;
+    height: 800px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.open{
+    width:100vw;
+    height: auto;
+    border: red 5px solid;
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+#flexme {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+*/
+
+
+#three {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #5b4f4a;
+
+}
+
+#four {}
+
+.envelope {
+/*    border: black 5px solid;*/
+    width: 700px;
+    height: 400px;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+
+
+
+    /*
+    max-width: 1000px;
+    height: auto;
+*/
+
+    /*    align-content: center;*/
+}
+
+
+#letter {
+    width: 700px;
+    z-index: -1;
+    position: absolute;
+    /*    why do i need to add this?*/
+    left: 0px;
+    top: 0px
+}
+
+.show {
+    transform: translateX(0px);
+    opacity: 1;
+}
+
+
+/*img{*/
+transform: translateX(300px);
+opacity: 1;
+transition: 2s ease all;
+}
+
+
+#animation {
+    transform: translateX(1000px);
+    opacity: 1;
+    transition: 2s ease all;
+}
+
+
+
+
+
+
+
+
+#opening {
+    z-index: 0;
+    top: 30px;
+    position: absolute;
+
+
+}
+
+
+
+
+.footer {
+    width: 100vw;
+    height: auto;
+    /*
+    position: fixed;
+    bottom: 0;
+*/
+    /*how do i make this the viewport width?*/
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
+}
+
+h1:hover {
+    color: black;
+}
