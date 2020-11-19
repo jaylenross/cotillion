@@ -5,10 +5,10 @@ $(function () {
 
     new ScrollMagic.Scene({
             triggerElement: "#one",
-            duration: 400, // the scene should last for a scroll distance of 400px
-            offset: 100 // start this scene after scrolling for 100px
+            duration: "400%", // the scene should last for a scroll distance of 400px
+            offset: 50 // start this scene after scrolling for 100px
         })
-        .setClassToggle("#sunrise", "show") // add class toggle
+        .setClassToggle("#letterclosed", "show") // add class toggle
         .addTo(controller);
 
     new ScrollMagic.Scene({
