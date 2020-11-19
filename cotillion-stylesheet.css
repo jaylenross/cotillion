@@ -34,14 +34,6 @@ h2 {
     color: red;
     text-align: left;
 }
-h3{
-    font-family: mrsblackfort-pro,sans-serif;
-font-weight: 400;
-font-style: normal;
-    font-size: 60px;
-    color: white;
-    text-align: center;
-}
 h4 {
     font-family: mr-donaldson, sans-serif;
     font-weight: 400;
@@ -69,10 +61,7 @@ section#one {
     top: 300px;
     position: relative;
     opacity: 50%;
-transition:opacity 0.3s
-    
-
-
+    transition:opacity 0.3s
 }
 
 
@@ -143,6 +132,7 @@ section#two {
     align-items: center;
 }
 
+/*
 .collage {
     border: black 5px solid;
     position: relative;
@@ -152,6 +142,7 @@ section#two {
     align-items: center;
     justify-content: center;
 }
+*/
 
 .blue {
     width: 500px;
@@ -160,18 +151,14 @@ section#two {
 }
 
 
-#first {
-    width: 600px;
-    z-index: -1;
-    position: absolute;
-}
+
 
 #second {
     width: 30%;
     z-index: 0;
-    position: absolute;
-    top: -200px;
-    left: 00px;
+    position: relative;
+    
+    
     filter: grayscale(100%);
     opacity: 85%;
 
@@ -185,8 +172,8 @@ section#two {
     opacity: 85%;
 }
 
-.imageone {
-
+/*IMAGE ONE*/
+.groupphoto {
     width: 1000px;
     height: 500px;
     position: absolute;
@@ -194,6 +181,14 @@ section#two {
     justify-content: center;
     align-items: center;
 }
+#groupphoto {
+    width: 600px;
+    z-index: -1;
+    position: absolute;
+}
+
+/*IMAGE TWO*/
+
 
 #move {
     margin-left: 1105px;
@@ -250,14 +245,7 @@ section#two {
 
 
 
-/*
-#flexme {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-}
-*/
+
 
 
 #three {
@@ -272,8 +260,9 @@ section#two {
 .inner {
     width: 600px;
     height: 600px;
-    border: white 2px solid;
-    justify-content: center;
+/*    border: white 2px solid;*/
+    align-items: center;
+    justify-content: space-between
 }
 
 
@@ -288,13 +277,78 @@ section#two {
 
 
 
+/*SECTION THREE*/
+h3 {
+    font-family: mrsblackfort-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 60px;
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+}
+h5{
+ font-family: p22-underground-sc, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    color: white;
+    text-align: left;   
+}
+h6{
+ font-family: p22-underground-sc, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    color: white;
+    text-align: left;   
+}
 
+/*Enrollment*/
+.etiquette{
+    width:350px;
+    height:80px;
+/*    border: red 5px solid;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;   
+}
+.reception{
+    width:350px;
+    height:110px;
+/*    border: red 5px solid;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;   
+}
+.meeting{
+    width:350px;
+    height:70px;
+/*    border: red 5px solid;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+#flexme {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
 
-
-
-
-
-
+/*Achievement*/
+.historydetails{
+    width:350px;
+}
+.innernext {
+    width: 600px;
+    height: 600px;
+/*    border: white 2px solid;*/
+    align-items: center;
+}
 
 
 
