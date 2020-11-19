@@ -18,20 +18,36 @@ height: 3000px;
 }
 
 h1 {
-    font-family: p22-underground-sc, sans-serif;
+    font-family: mr-donaldson, sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 100px;
+    font-size: 200px;
     color: white;
     text-align: center;
 }
+
 h2 {
     font-family: p22-underground-sc, sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 20px;
-    color: white;
+    color: red;
     text-align: left;
+}
+h3{
+    font-family: mrsblackfort-pro,sans-serif;
+font-weight: 400;
+font-style: normal;
+    font-size: 60px;
+    color: white;
+    text-align: center;
+}
+h4 {
+    font-family: mr-donaldson, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    color: white;
 }
 
 section {
@@ -43,10 +59,81 @@ section {
 
 section#one {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
+
+#opening {
+    z-index: 1;
+    top: 300px;
+    position: relative;
+    opacity: 50%;
+transition:opacity 0.3s
+    
+
+
+}
+
+
+.envelope {
+/*        border: black 5px solid;*/
+    width: 800px;
+    height: 500px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#letter {
+    width: 1000px;
+    z-index: -1;
+    position: absolute;
+    /*    why do i need to add this?*/
+
+}
+
+.hide{
+    opacity:0;
+}
+
+#letterclosed {
+    width: 1000px;
+    z-index: 0;
+    position: absolute;
+    align-content: center;
+    transition: 5s;
+}
+
+#paper{
+    width: 500px;
+    bottom : 100px;
+    z-index: -2;
+    position: absolute;
+    align-content: center;
+}
+
+
+.show {
+    transform: translateY(100px);
+    opacity: 1;
+}
+
+.fade-in {
+opacity: 50%;
+transition:opacity 0.8s
+}
+
+.fade-in:hover {
+opacity:100%;
+transition:opacity 0.5s
+}
+
+
+
+
+
 
 
 section#two {
@@ -56,17 +143,15 @@ section#two {
     align-items: center;
 }
 
-
 .collage {
     border: black 5px solid;
     position: relative;
-    width: 1000px;
-    height:800px;
+    width: 100vw;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
 
 .blue {
     width: 500px;
@@ -76,27 +161,30 @@ section#two {
 
 
 #first {
-    width: 1170px;
+    width: 600px;
     z-index: -1;
     position: absolute;
 }
+
 #second {
-    width: 40%;
+    width: 30%;
     z-index: 0;
     position: absolute;
-    top:-200px;
+    top: -200px;
     left: 00px;
     filter: grayscale(100%);
     opacity: 85%;
 
 }
-#third{
+
+#third {
     z-index: 1;
-    top:300px;
-    left: -130px;
+    top: 400px;
+    left: -330px;
     position: absolute;
     opacity: 85%;
 }
+
 .imageone {
 
     width: 1000px;
@@ -107,39 +195,36 @@ section#two {
     align-items: center;
 }
 
-#move{
-    margin-left:1105px;
-    margin-bottom:125px; 
+#move {
+    margin-left: 1105px;
+    margin-bottom: 125px;
 }
 
-#movetwo{
-    margin-left:-355px;
-    margin-bottom:375px;
+#movetwo {
+    margin-left: -355px;
+    margin-bottom: 375px;
     transform: rotate(180deg);
 }
-#movethree{
-    margin-left:-1285px;
-    margin-bottom:50px;
+
+#movethree {
+    margin-left: -1285px;
+    margin-bottom: 50px;
     transform: rotate(180deg);
 }
 
 
 .imagethree {
-
-    width: 1200px;
-    height: 800px;
+    top: 150px;
     position: absolute;
-    display: flex;
-    justify-content: center;
     align-items: center;
-    
+
 }
 
-.open{
-    width:100vw;
+.open {
+    width: 100vw;
     height: auto;
     border: red 0px solid;
-     display: flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -177,22 +262,78 @@ section#two {
 
 #three {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-evenly;
     align-items: center;
     background-color: #5b4f4a;
 
 }
 
+.inner {
+    width: 600px;
+    height: 600px;
+    border: white 2px solid;
+    justify-content: center;
+}
+
+
+.divider {
+    height: 600px;
+    width: 4px;
+    background: white;
+    border-radius: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #four {}
 
-.envelope {
-/*    border: black 5px solid;*/
-    width: 700px;
-    height: 400px;
-    position: relative;
-    display: flex;
-    align-items: center;
 
 
 
@@ -206,33 +347,26 @@ section#two {
 }
 
 
-#letter {
-    width: 700px;
-    z-index: -1;
-    position: absolute;
-    /*    why do i need to add this?*/
-    left: 0px;
-    top: 0px
-}
-
-.show {
-    transform: translateX(0px);
-    opacity: 1;
-}
 
 
-/*img{*/
+
+
+/*
+img{
 transform: translateX(300px);
 opacity: 1;
 transition: 2s ease all;
 }
+*/
 
 
+/*
 #animation {
     transform: translateX(1000px);
     opacity: 1;
     transition: 2s ease all;
 }
+*/
 
 
 
@@ -241,13 +375,7 @@ transition: 2s ease all;
 
 
 
-#opening {
-    z-index: 0;
-    top: 30px;
-    position: absolute;
 
-
-}
 
 
 
