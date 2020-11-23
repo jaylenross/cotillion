@@ -49,6 +49,8 @@ section {
 
 }
 
+
+/*SECTION ONE*/
 section#one {
     display: flex;
     flex-direction: row;
@@ -78,10 +80,9 @@ section#one {
 #letter {
     width: 1000px;
     top: 180px;
-    z-index: -1;
+    z-index: 1;
     position: absolute;
-    /*    why do i need to add this?*/
-
+    transition: 5s;
 }
 
 .hide{
@@ -108,6 +109,10 @@ section#one {
 
 .show {
     transform: translateY(480px);
+    opacity: 1;
+}
+
+.showtwo {
     opacity: 1;
 }
 
@@ -155,6 +160,23 @@ section#two {
     position: absolute;
     opacity: 85%;
 }
+
+/*TRANSITIONS*/
+.reel{
+    opacity:1;
+}
+
+.oneR{
+    transition:opacity 2s;
+/*    transition-delay: 1s;*/
+}
+
+.twoR{
+    transition:opacity 1s;
+}
+
+
+
 
 /*IMAGE ONE-GROUP*/
 /*
@@ -212,14 +234,20 @@ section#two {
 #full{
     width: 70%;
     height:auto;
+    transform:translateX(-200px);
 }
 
+#fuller{
+    width: 70%;
+    height:auto;
+}
 .imagereel{
     width:100vw;
     display:flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .hide1{
@@ -233,12 +261,18 @@ section#two {
  }   
     
 .myDIV{
+    position: absolute;
+    top: 0px;
+    left:0px;
+    transition: 1s;
     background-color: red;
     width:100px;
     height: 100px;
+    display: none;
+    z-index:1;
 }
 
-.myDIV:hover + .hide1{
+.imagereel:hover .myDIV{
     display: block;
 }    
 
